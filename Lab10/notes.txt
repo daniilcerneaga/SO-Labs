@@ -1,0 +1,10 @@
+Lab 10 — Observe answers
+Daniil Cerneaga, FAF-243
+
+1. Mask 32 is 1 << SYS_read (5). Only read's bit is set, so open and close execute without trace lines.
+
+2. np->trace_mask = p->trace_mask in the fork path copies the mask into each child before it becomes runnable. Descendants then trace their own selected calls as well.
+
+3. echo writes "hi" with one write of 2 bytes, then a newline with another write of 1 byte. The dispatcher prints after each completed handler, so the first trace line appears between those two pieces of user output.
+
+4. Open is syscall 15 and close is 21: (1 << 15) | (1 << 21) = 32768 + 2097152 = 2129920. The executed mask test printed only open and close trace names.

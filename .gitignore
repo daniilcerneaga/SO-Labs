@@ -1,0 +1,25 @@
+/instructions/
+~$*.docx
+
+# Executables and output files from the Linux exercises.
+/Lab3/access.log
+/Lab3/report.log
+/Lab4/args
+/Lab7/run
+/Lab7/zombie
+/Lab7/redirect
+/Lab7/pipeline
+/Lab7/pipeline3
+/Lab7/out.txt
+/Lab9/syscalls
+/Lab9/note.txt
+/Lab11/race
+/Lab11/mutex
+/Lab11/sem
+/Lab11/order
+/Lab11/parking
+/Lab11/atomic
+/Lab12/prodcons
+/Lab12/condvar
+/Lab12/readers
+/Lab12/deadlock
